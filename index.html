@@ -8,36 +8,88 @@
 </head>
 <body>
 
-  <div class="book-container">
-    <div class="page" id="page-1">
-      <img src="./media/FrontPage.png" alt="Front Page" class="page-image">
-    </div>
-    <div class="page" id="page-2">
-      <img src="./media/Pic1.png" alt="Page 1" class="page-image">
-    </div>
-    <div class="page" id="page-3">
-      <img src="./media/Pic2.png" alt="Page 2" class="page-image">
-    </div>
-    <div class="page" id="page-4">
-      <img src="./media/Pic3.png" alt="Page 3" class="page-image">
-    </div>
-    <div class="page" id="page-5">
-      <img src="./media/Pic4.png" alt="Page 4" class="page-image">
-    </div>
-    <div class="page" id="page-6">
-      <img src="./media/Pic5.png" alt="Page 5" class="page-image">
-    </div>
-    <div class="page" id="page-7">
-      <img src="./media/Pic6.png" alt="Page 6" class="page-image">
-    </div>
-    <div class="page" id="page-8">
-      <img src="./media/Pic7.png" alt="Page 7" class="page-image">
-    </div>
-  </div>
+  <<div class="flipbook-container">
+    <div class="book">
+      <!-- Page 1 -->
+      <div class="page" data-page="1">
+        <div class="page-front">
+          <div class="placeholder-page">
+            <div class="page-icon">📖</div>
+            <div>Front Cover</div>
+            <div style="font-size: 16px; margin-top: 10px;">Kids Story Book</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="placeholder-page">
+            <div class="page-icon">🌟</div>
+            <div>Page 1</div>
+            <div style="font-size: 16px; margin-top: 10px;">Once upon a time...</div>
+          </div>
+        </div>
+      </div>
 
-  <div class="controls">
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
+      <!-- Page 2 -->
+      <div class="page" data-page="2">
+        <div class="page-front">
+          <div class="placeholder-page">
+            <div class="page-icon">🦋</div>
+            <div>Page 2</div>
+            <div style="font-size: 16px; margin-top: 10px;">Beautiful butterflies</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="placeholder-page">
+            <div class="page-icon">🌈</div>
+            <div>Page 3</div>
+            <div style="font-size: 16px; margin-top: 10px;">Rainbow adventures</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="page" data-page="3">
+        <div class="page-front">
+          <div class="placeholder-page">
+            <div class="page-icon">🐻</div>
+            <div>Page 4</div>
+            <div style="font-size: 16px; margin-top: 10px;">Friendly bears</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="placeholder-page">
+            <div class="page-icon">🌙</div>
+            <div>Page 5</div>
+            <div style="font-size: 16px; margin-top: 10px;">Moonlight dreams</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="page" data-page="4">
+        <div class="page-front">
+          <div class="placeholder-page">
+            <div class="page-icon">🌸</div>
+            <div>Page 6</div>
+            <div style="font-size: 16px; margin-top: 10px;">Spring flowers</div>
+          </div>
+        </div>
+        <div class="page-back">
+          <div class="placeholder-page">
+            <div class="page-icon">⭐</div>
+            <div>The End</div>
+            <div style="font-size: 16px; margin-top: 10px;">Thank you for reading!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="nav-btn" id="prevBtn" title="Previous Page">‹</button>
+      <div class="page-counter">
+        <span id="currentPage">1</span> / <span id="totalPages">8</span>
+      </div>
+      <button class="nav-btn" id="nextBtn" title="Next Page">›</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
